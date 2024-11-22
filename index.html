@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <main class="TMA-Desktop">
+            <div class="screen" id="desktop">
+                <span class="desktopIcon" id="datetime"></span>
+                <div class="desktopIcon" id="folder"></div>
+            </div>
+
+            <div>
+                <button onclick="toggleMonitor()" id="powerButton"></button>
+            </div>
+
+            <div>
+                <button onclick="toggleDark()" id="darkButton"></button>
+            </div>
+
+            <div id="dark"></div>
+        </main>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>

@@ -1,0 +1,112 @@
+/*CSS Reset Rule*/
+*
+{
+    margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+    height: auto;
+}
+
+.TMA-Desktop{
+    display: block;
+    position: absolute;
+    background-image: url(../assets/TMA-Background-Alt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    resize: both;
+    overflow: scroll;
+}
+
+.screen{
+    position: absolute;
+    top: 285px;
+    left: 670px;
+    width: 536px;
+    height: 412px;
+    z-index: 2;
+}
+
+.desktopIcon{
+    width: 15%;
+    height: 15%;
+    z-index: 3;
+}
+
+#desktop{
+    display: none;
+    background-image: url(../assets/DesktopBackground.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+#folder{
+    display: inherit;
+    position: absolute;
+    background-image: url(../assets/folderIcon.png);
+    background-size: cover;
+}
+
+#folder:hover{
+    cursor:pointer;
+}
+
+#dark{
+    display: none;
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000; 
+}
+
+#darkButton{
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 275px; 
+    top: 350px;
+    left: 1470px;
+    opacity: 0%;
+    z-index: 5;
+}
+
+#darkButton:hover{
+    cursor: pointer;
+}
+
+#powerButton{
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: 771px;
+    left: 1117px;
+    opacity: 10%;
+    border-radius: 10%;
+    z-index: 6;
+}
+
+#powerButton:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+#datetime{
+    display: inherit;
+    font-size: xx-small;
+    position: absolute;
+    top: 96.75%;
+    left: 73%;
+}
+
+@keyframes toggleMonitor{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
