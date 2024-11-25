@@ -6,9 +6,11 @@ function toggleMonitor() {
     if (x.style.display === 'block') {
       x.style.display = 'none';
       monitorBool = false;
+      joeSpooky();
     } else {
       x.style.display = 'block';
       monitorBool = true;
+      joeSpooky();
     }
   }
   
@@ -42,22 +44,18 @@ function joeSpooky(){
   {
     x.style.backgroundImage = "url(assets/joeSpooky.png)";
     
-    /*
     for (let i = 0; i < y.length; i++) {
-      i.style.display = 'none';
+      y[i].style.display = 'none';
     }
-    */
 
     $("#desktop").fadeIn(8000);
   }
   if(!darkBool || monitorBool)
   {
     x.style.backgroundImage = "url(assets/DesktopBackground.png)";
-    /*
     for (let i = 0; i < y.length; i++) {
-      i.style.display = 'block';
+      y[i].style.display = 'block';
     }
-      */
   }
 }
 

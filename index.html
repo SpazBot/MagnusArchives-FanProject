@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=1024px, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -11,7 +11,16 @@
         <main class="TMA-Desktop">
             <div class="screen" id="desktop">
                 <span class="desktopIcon" id="datetime"></span>
-                <div class="desktopIcon" id="folder"></div>
+
+                <div class="desktopIcon" id="folderIcon"></div>
+
+                <div class="desktopIcon" id="folderMenu"></div>
+
+                <div class="desktopIcon" id="internetIcon"></div>
+
+                <div class="desktopIcon" id="browserMenu">
+                    <button onclick="toggleBrowser()"></button>
+                </div>
             </div>
 
             <div>
@@ -20,6 +29,14 @@
 
             <div>
                 <button onclick="toggleDark()" id="darkButton"></button>
+            </div>
+
+            <div>
+                <button onclick="playTape()" id="tapeButton"></button>
+            </div>
+
+            <div>
+                <button onclick="DIG()" id="digButton"></button>
             </div>
 
             <div id="dark"></div>

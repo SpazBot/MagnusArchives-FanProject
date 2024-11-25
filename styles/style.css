@@ -10,8 +10,11 @@
 }
 
 body{
-    width: auto;
-    height: auto;
+    width: 1920px;
+    height: 1080px;
+    overflow: -moz-scrollbars-horizontal;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .TMA-Desktop{
@@ -28,17 +31,22 @@ body{
 
 .screen{
     position: absolute;
-    top: 285px;
-    left: 670px;
-    width: 536px;
-    height: 412px;
+    top: 27.5vh;
+    left: 35.75vw;
+    width: 28.5vw;
+    height: 40.9vh;
     z-index: 2;
 }
 
 .desktopIcon{
-    width: 15%;
-    height: 15%;
+    width: 2vw;
+    height: 3.5vh;
     z-index: 3;
+    margin: 1vh;
+}
+
+.desktopIcon:hover{
+    cursor: pointer;
 }
 
 #desktop{
@@ -48,15 +56,27 @@ body{
     z-index: 1;
 }
 
-#folder{
+#folderIcon{
     display: inherit;
     position: absolute;
     background-image: url(../assets/folderIcon.png);
     background-size: cover;
 }
 
-#folder:hover{
-    cursor:pointer;
+#folderMenu{
+    display: none;
+}
+
+#browsermenu{
+    display: none;
+    background-image: url(../assets/browserWindow.png);
+}
+
+#internetIcon{
+    display: inherit;
+    position: absolute;
+    background-image: url(../assets/internetIcon.png);
+    background-size: cover;
 }
 
 #dark{
@@ -70,10 +90,10 @@ body{
 #darkButton{
     position: absolute;
     display: block;
-    width: 10px;
-    height: 275px; 
-    top: 350px;
-    left: 1470px;
+    width: .6vw;
+    height: 30vh; 
+    top: 32vh;
+    left: 78.2vw;
     opacity: 0%;
     z-index: 5;
 }
@@ -84,10 +104,10 @@ body{
 
 #powerButton{
     position: absolute;
-    width: 35px;
-    height: 30px;
-    top: 771px;
-    left: 1117px;
+    width: 2vw;
+    height: 3.5vh;
+    top: 75vh;
+    left: 59.5vw;
     opacity: 10%;
     border-radius: 10%;
     z-index: 6;
@@ -98,12 +118,44 @@ body{
     cursor: pointer;
 }
 
+#tapeButton{
+    position: absolute;
+    display: block;
+    width: 2.2vw;
+    height: 2vh;
+    top: 89vh;
+    left: 62vw;
+    transform: rotate(-30deg) skew(20deg);
+    opacity: 10%;
+}
+
+#tapeButton:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+#digButton{
+    position: absolute;
+    display: block;
+    width: 2vw;
+    height: 6.5vh;
+    top: 53vh;
+    left: 1vw;
+    opacity: 0%;
+}
+
+#digButton:hover{
+    cursor: pointer;
+}
+
 #datetime{
     display: inherit;
     font-size: xx-small;
     position: absolute;
-    top: 96.75%;
+    top: 94.5%;
     left: 73%;
+    width: 6vw;
+    height: 1vh;
 }
 
 @keyframes toggleMonitor{
